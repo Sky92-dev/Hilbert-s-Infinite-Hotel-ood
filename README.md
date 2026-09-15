@@ -206,7 +206,7 @@ Select Function:
 ## 🧪 Test Cases
 
 | ID | Test Case | Input | Expected Result |
-|---|---|---|---|---:|---:|
+|---|---|---|---|
 | TC01 | Add 100 guests | `Walk 100` | 100 unique rooms |
 | TC02 | Add guests from multiple channels | `Bus 1 / Train 2 / W 100, Bus 1 / Train 1 / W 100` | 200 Unique rooms assigned |
 | TC03 | Add duplicate guest group | ... | No duplicate rooms | 
