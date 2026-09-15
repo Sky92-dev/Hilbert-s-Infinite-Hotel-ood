@@ -2,8 +2,6 @@ import os, psutil
 import pandas as pd
 import time
 import random
-"พิมพ์ที่ pip install pandas openpyxl terminal ก่อน"
-
 
 class HeapTree:
     class Node:
