@@ -172,7 +172,7 @@ Using both allows the system to avoid relying on a single data structure for eve
 |---|---|---|---|
 | TC01 | `Bus 1 / Train 2 / W 100` | Assign unique rooms to 100 guests | ✅ Pass |
 | TC02 | `W 40` | Assign unique rooms to 40 guests | ✅ Pass |
-| TC03 | `Bus 2 / Train 1 / W 20` | Assign unique rooms without duplication | ✅ Pass |
+| TC03 | `Bus 2 / Train 1 / W 20, Bus 2 / Train 2 / W 40` | Assign unique rooms to 60 guests | ✅ Pass |
 | TC04 | Add new room | Room is added successfully | ✅ Pass |
 | TC05 | Remove room | Room is removed successfully | ✅ Pass |
 | TC06 | Duplicate room number | Generate another available room | ✅ Pass |
