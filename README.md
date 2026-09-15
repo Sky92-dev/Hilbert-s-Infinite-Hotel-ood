@@ -170,13 +170,13 @@ Using both allows the system to avoid relying on a single data structure for eve
 
 | Test Case | Input | Expected Result | Status |
 |---|---|---|---|
-| TC01 | `Bus 1 / Train 2 / W 100` | Assign unique rooms to 100 guests | ✅ Pass |
-| TC02 | `W 40` | Assign unique rooms to 40 guests | ✅ Pass |
-| TC03 | `Bus 2 / Train 1 / W 20, Bus 2 / Train 2 / W 40` | Assign unique rooms to 60 guests | ✅ Pass |
-| TC04 | Add new room | Room is added successfully | ✅ Pass |
-| TC05 | Remove room | Room is removed successfully | ✅ Pass |
-| TC06 | Duplicate room number | Generate another available room | ✅ Pass |
-| TC07 | Export data | Guest and room data are exported to Excel | ✅ Pass |
+| TC01 | `Bus 1 / Train 2 / W 100` | Assign unique rooms to 100 guests | Passed |
+| TC02 | `W 40` | Assign unique rooms to 40 guests | Passed |
+| TC03 | `Bus 2 / Train 1 / W 20, Bus 2 / Train 2 / W 40` | Assign unique rooms to 60 guests | Passed |
+| TC04 | Add new room | Room is added successfully | Passed |
+| TC05 | Remove room | Room is removed successfully | Passed |
+| TC06 | Duplicate room number | Generate another available room | Passed |
+| TC07 | Export data | Guest and room data are exported to Excel | Passed |
 ##  Guest Management Flow
 
 When a new guest group arrives:
