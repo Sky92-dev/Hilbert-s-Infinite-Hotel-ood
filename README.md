@@ -209,7 +209,7 @@ Select Function:
 |---|---|---|---|
 | TC01 | Add 100 guests | `Walk 100` | 100 unique rooms |
 | TC02 | Add guests from multiple channels | `Bus 1 / Train 2 / W 100, Bus 1 / Train 1 / W 100` | 200 Unique rooms assigned |
-| TC03 | Add duplicate guest group | ... | No duplicate rooms | 
+| TC03 | Add duplicate guest group | ... | immediately assign guest new room | 
 | TC04 | Delete room | Room `X` | Room removed | 
 | TC05 | Add manual room | Room `X` | Guests reassigned | 
 | TC06 | Search room | Room `X` | Guest information returned | 
