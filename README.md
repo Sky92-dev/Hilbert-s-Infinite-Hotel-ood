@@ -166,7 +166,17 @@ The two structures have different purposes:
 Using both allows the system to avoid relying on a single data structure for every operation.
 
 ---
+## 🧪 Test Cases
 
+| Test Case | Input | Expected Result | Status |
+|---|---|---|---|
+| TC01 | `Bus 1 / Train 2 / W 100` | Assign unique rooms to 100 guests | ✅ Pass |
+| TC02 | `W 40` | Assign unique rooms to 40 guests | ✅ Pass |
+| TC03 | `Bus 2 / Train 1 / W 20` | Assign unique rooms without duplication | ✅ Pass |
+| TC04 | Add new room | Room is added successfully | ✅ Pass |
+| TC05 | Remove room | Room is removed successfully | ✅ Pass |
+| TC06 | Duplicate room number | Generate another available room | ✅ Pass |
+| TC07 | Export data | Guest and room data are exported to Excel | ✅ Pass |
 ##  Guest Management Flow
 
 When a new guest group arrives:
