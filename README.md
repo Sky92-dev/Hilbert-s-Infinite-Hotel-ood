@@ -40,9 +40,7 @@ means:
 Another example:
 
 ```text
-Bus 1 / Train 2 / W 100
-W 40
-Bus 2 / Train 1 / W 20
+Bus 1 / Train 2 / W 100, W 40, Bus 2 / Train 1 / W 20
 ```
 
 represents multiple groups of guests arriving through different channels.
