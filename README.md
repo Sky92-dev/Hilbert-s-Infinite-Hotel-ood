@@ -166,17 +166,53 @@ The two structures have different purposes:
 Using both allows the system to avoid relying on a single data structure for every operation.
 
 ---
+## 💻 Terminal Application
+
+The program provides a command-line interface for managing guests and hotel rooms.
+
+### Example
+
+```text
+Starting memory usage: 66.05 MB
+
+Enter guest first group : Walk 100
+-----------------------------------
+✅ Guest(s) added. Execution time: 0.00037970 seconds
+
+Select Function:
+1 → Add new guest
+2 → Add manual room (reassign all)
+3 → Delete a room
+4 → Show all room numbers (sorted)
+5 → Search guest by room number
+6 → Save data to file
+7 → Get memory used
+0 → Exit
+```
+
+### Available Operations
+
+| Option | Operation             | Description                                |
+| -----: | --------------------- | ------------------------------------------ |
+|      1 | Add new guest         | Add a new group of guests and assign rooms |
+|      2 | Add manual room       | Add a room and reassign existing guests    |
+|      3 | Delete a room         | Remove an existing room                    |
+|      4 | Show all room numbers | Display room numbers in sorted order       |
+|      5 | Search guest          | Find guest information using a room number |
+|      6 | Save data to file     | Export guest and room information          |
+|      7 | Get memory used       | Display current memory usage               |
+|      0 | Exit                  | Exit the program                           |
+
 ## 🧪 Test Cases
 
-| Test Case | Input | Expected Result | Status |
-|---|---|---|---|
-| TC01 | `Bus 1 / Train 2 / W 100` | Assign unique rooms to 100 guests | Passed |
-| TC02 | `W 40` | Assign unique rooms to 40 guests | Passed |
-| TC03 | `Bus 2 / Train 1 / W 20, Bus 2 / Train 2 / W 40` | Assign unique rooms to 60 guests | Passed |
-| TC04 | Add new room | Room is added successfully | Passed |
-| TC05 | Remove room | Room is removed successfully | Passed |
-| TC06 | Duplicate room number | Generate another available room | Passed |
-| TC07 | Export data | Guest and room data are exported to Excel | Passed |
+| ID | Test Case | Input | Expected Result | Execution Time | Memory |
+|---|---|---|---|---:|---:|
+| TC01 | Add 100 guests | `Walk 100` | 100 unique rooms | 0.00037970 s | 66.05 MB |
+| TC02 | Add guests from multiple channels | `Bus 1 / Train 2 / W 100` | Unique rooms assigned | - | - |
+| TC03 | Add duplicate guest group | ... | No duplicate rooms | - | - |
+| TC04 | Delete room | Room `X` | Room removed | - | - |
+| TC05 | Add manual room | Room `X` | Guests reassigned | - | - |
+| TC06 | Search room | Room `X` | Guest information returned | - | - |
 ##  Guest Management Flow
 
 When a new guest group arrives:
